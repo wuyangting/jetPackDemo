@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun destToRoom(){
+        //跳转到使用Room组件库的页面
         startActivity(Intent(this,RoomActivity::class.java))
     }
 }
