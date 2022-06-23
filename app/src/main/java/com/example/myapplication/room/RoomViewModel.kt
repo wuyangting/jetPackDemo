@@ -62,6 +62,7 @@ class RoomViewModel(private val context: Application):AndroidViewModel(context) 
     }
 
    suspend fun queryData() :List<StudentBean>{
+       //不是实时的，需要等待后续使用LiveData替换
        var data= listOf<StudentBean>()
         val job =scope.async {
            data= roomUtils.queryData()
